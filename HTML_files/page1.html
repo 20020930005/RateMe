@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RateMe - Advanced</title>
+  <link rel="stylesheet" href="../CSS_files/page1.css">
+</head>
+<body>
+  <header>
+    <h1>🚀 Advanced RateMe Dashboard 🚀</h1>
+    <p>Showcase your skills with detailed sub-topics and creativity!</p>
+  </header>
+
+  <main>
+    <!-- Each main category with sub-topics -->
+    <section class="main-category">
+      <div class="category-header">
+        <h2>Web Frontend</h2>
+        <div class="progress-bar">
+          <div class="progress" data-category="frontend"></div>
+        </div>
+        <span class="level" data-category="frontend">0%</span>
+      </div>
+      
+      <div class="subtopics">
+        <div>
+          <button>Languages</button></div><br>
+        <div class="subtopic">
+          <h3>HTML</h3>
+          <input type="range" min="0" max="100" value="0" class="slider" data-category="frontend" data-subtopic="html">
+          <span class="level" data-category="frontend" data-subtopic="html">0%</span>
+        </div>
+        <div class="subtopic">
+          <h3>CSS</h3>
+          <input type="range" min="0" max="100" value="0" class="slider" data-category="frontend" data-subtopic="css">
+          <span class="level" data-category="frontend" data-subtopic="css">0%</span>
+        </div>
+        <div class="subtopic">
+          <h3>JavaScript</h3>
+          <input type="range" min="0" max="100" value="0" class="slider" data-category="frontend" data-subtopic="javascript">
+          <span class="level" data-category="frontend" data-subtopic="javascript">0%</span>
+        </div>
+
+
+        
+            <div>
+              <button>Frameworks</button></div><br>
+            <div class="subtopic">
+              <h3>React</h3>
+              <input type="range" min="0" max="100" value="0" class="slider" data-category="frontend" data-subtopic="react">
+              <span class="level" data-category="frontend" data-subtopic="react">0%</span>
+            </div>
+            <div class="subtopic">
+              <h3>vue.js</h3>
+              <input type="range" min="0" max="100" value="0" class="slider" data-category="frontend" data-subtopic="vyujs">
+              <span class="level" data-category="frontend" data-subtopic="vyujs">0%</span>
+            </div>
+            <div class="subtopic">
+              <h3>Angular</h3>
+              <input type="range" min="0" max="100" value="0" class="slider" data-category="frontend" data-subtopic="angular">
+              <span class="level" data-category="frontend" data-subtopic="angular">0%</span>
+            
+
+
+      </div>
+      <button class="activity">Followed Learning Activities...</button>
+      <div class="feedback-section">
+       
+        <textarea placeholder="add your activities here..." id="feedbackText"></textarea>
+        <button class="submit-btn" onclick="saveFeedback()" style="background-color: black;">Add Activity</button>
+      </div>
+      
+      </div>
+      
+    </section>
+
+    <section class="main-category">
+      <div class="category-header">
+        <h2>Web Backend</h2>
+        <div class="progress-bar">
+          <div class="progress" data-category="backend"></div>
+        </div>
+        <span class="level" data-category="backend">0%</span>
+      </div>
+
+      <div class="subtopics">
+        <div>
+          <button>Languages</button>
+        </div>
+        <div class="subtopic">
+          <h3>Node.js</h3>
+          <input type="range" min="0" max="100" value="0" class="slider" data-category="backend" data-subtopic="nodejs">
+          <span class="level" data-category="backend" data-subtopic="nodejs">0%</span>
+        </div>
+        <div class="subtopic">
+          <h3>Python</h3>
+          <input type="range" min="0" max="100" value="0" class="slider" data-category="backend" data-subtopic="python">
+          <span class="level" data-category="backend" data-subtopic="python">0%</span>
+        </div>
+        <div class="subtopic">
+          <h3>Django</h3>
+          <input type="range" min="0" max="100" value="0" class="slider" data-category="backend" data-subtopic="django">
+          <span class="level" data-category="backend" data-subtopic="django">0%</span>
+        </div>
+
+        <div>
+          <button>Frameworks</button></div><br>
+        <div class="subtopic">
+          <h3>Express.js</h3>
+          <input type="range" min="0" max="100" value="0" class="slider" data-category="backend" data-subtopic="expressjs">
+          <span class="level" data-category="backend" data-subtopic="expressjs">0%</span>
+        </div>
+        <div class="subtopic">
+          <h3>Django</h3>
+          <input type="range" min="0" max="100" value="0" class="slider" data-category="backend" data-subtopic="Django">
+          <span class="level" data-category="backend" data-subtopic="Django">0%</span>
+        </div>
+        <div class="subtopic">
+          <h3>Spring Boot</h3>
+          <input type="range" min="0" max="100" value="0" class="slider" data-category="backend" data-subtopic="sb">
+          <span class="level" data-category="backend" data-subtopic="sb">0%</span>
+      </div>
+
+      <button class="activity">Followed Learning Activities...</button>
+      <div class="feedback-section">
+       
+        <textarea placeholder="add your activities here..." id="feedbackText"></textarea>
+        <button class="submit-btn" onclick="saveFeedback()" style="background-color: black;">Add Activity</button>
+      </div>
+
+    </section>
+    
+
+    <section class="main-category">
+      <div class="category-header">
+        <h2>Mobile Native</h2>
+        <div class="progress-bar">
+          <div class="progress" data-category="Mnative"></div>
+        </div>
+        <span class="level" data-category="Mnative">0%</span>
+      </div>
+
+      <div class="subtopics">
+        <div>
+          <button>Languages</button>
+        </div>
+        <div class="subtopic">
+          <h3>java</h3>
+          <input type="range" min="0" max="100" value="0" class="slider" data-category="Mnative" data-subtopic="nodejs">
+          <span class="level" data-category="Mnative" data-subtopic="nodejs">0%</span>
+        </div>
+        <div class="subtopic">
+          <h3>swift</h3>
+          <input type="range" min="0" max="100" value="0" class="slider" data-category="Mnative" data-subtopic="python">
+          <span class="level" data-category="Mnative" data-subtopic="python">0%</span>
+        </div>
+
+        <div>
+          <button>Frameworks</button>
+          <div class="subtopic">
+            <h3>Android</h3>
+            <input type="range" min="0" max="100" value="0" class="slider" data-category="Mnative" data-subtopic="Andoid">
+            <span class="level" data-category="Mnative" data-subtopic="Andoid">0%</span>
+          </div>
+          <div class="subtopic">
+            <h3>Xcode</h3>
+            <input type="range" min="0" max="100" value="0" class="slider" data-category="Mnative" data-subtopic="Xcode">
+            <span class="level" data-category="Mnative" data-subtopic="Xcode">0%</span>
+          </div>
+
+        </div>
+
+        <button class="activity">Followed Learning Activities...</button>
+      <div class="feedback-section">
+       
+        <textarea placeholder="add your activities here..." id="feedbackText"></textarea>
+        <button class="submit-btn" onclick="saveFeedback()" style="background-color: black;">Add Activity</button>
+      </div>
+        
+      </div>
+    </section>
+
+
+    <section class="main-category">
+      <div class="category-header">
+        <h2>Cross Platform</h2>
+        <div class="progress-bar">
+          <div class="progress" data-category="cp"></div>
+        </div>
+        <span class="level" data-category="cp">0%</span>
+      </div>
+
+      <div class="subtopics">
+        <div>
+          <button>Languages</button>
+        </div>
+        <div class="subtopic">
+          <h3>Dart/Flutter</h3>
+          <input type="range" min="0" max="100" value="0" class="slider" data-category="cp" data-subtopic="dart">
+          <span class="level" data-category="cp" data-subtopic="dart">0%</span>
+        </div>
+        <div class="subtopic">
+          <h3>JavaScript</h3>
+          <input type="range" min="0" max="100" value="0" class="slider" data-category="cp" data-subtopic="python">
+          <span class="level" data-category="cp" data-subtopic="python">0%</span>
+        </div>
+
+        <div>
+          <button>Frameworks</button>
+          <div class="subtopic">
+            <h3>React Native</h3>
+            <input type="range" min="0" max="100" value="0" class="slider" data-category="cp" data-subtopic="rn">
+            <span class="level" data-category="cp" data-subtopic="rn">0%</span>
+          </div>
+          <div class="subtopic">
+            <h3>Xamarin</h3>
+            <input type="range" min="0" max="100" value="0" class="slider" data-category="cp" data-subtopic="Xm">
+            <span class="level" data-category="cp" data-subtopic="Xm">0%</span>
+          </div>
+
+          <button class="activity">Followed Learning Activities...</button>
+      <div class="feedback-section">
+       
+        <textarea placeholder="add your activities here..." id="feedbackText"></textarea>
+        <button class="submit-btn" onclick="saveFeedback()" style="background-color: black;">Add Activity</button>
+      </div>
+          
+        
+      </div>
+    </section>
+
+    <section class="main-category">
+      <div class="category-header">
+        <h2>Artificial Intelligent</h2>
+        <div class="progress-bar">
+          <div class="progress" data-category="ai"></div>
+        </div>
+        <span class="level" data-category="ai">0%</span>
+      </div>
+
+      <div class="subtopics">
+        <div>
+          <button>Languages</button>
+        </div>
+        <div class="subtopic">
+          <h3>python</h3>
+          <input type="range" min="0" max="100" value="0" class="slider" data-category="ai" data-subtopic="python">
+          <span class="level" data-category="ai" data-subtopic="python">0%</span>
+        </div>
+        
+
+        <div>
+          <button>Frameworks</button>
+          <div class="subtopic">
+            <h3>Tensorflow</h3>
+            <input type="range" min="0" max="100" value="0" class="slider" data-category="ai" data-subtopic="tf">
+            <span class="level" data-category="ai" data-subtopic="tf">0%</span>
+          </div>
+          <div class="subtopic">
+            <h3>pyTorch</h3>
+            <input type="range" min="0" max="100" value="0" class="slider" data-category="ai" data-subtopic="pt">
+            <span class="level" data-category="ai" data-subtopic="pt">0%</span>
+          </div>
+
+          <button class="activity">Followed Learning Activities...</button>
+      <div class="feedback-section">
+       
+        <textarea placeholder="add your activities here..." id="feedbackText"></textarea>
+        <button class="submit-btn" onclick="saveFeedback()" style="background-color: black;">Add Activity</button>
+      </div>
+        
+      </div>
+    </section>
+
+    <section class="main-category">
+      <div class="category-header">
+        <h2>Version Control</h2>
+        <div class="progress-bar">
+          <div class="progress" data-category="vc"></div>
+        </div>
+        <span class="level" data-category="vc">0%</span>
+      </div>
+
+      <div class="subtopics">
+        <div>
+          <button>Languages</button>
+        </div>
+        <div class="subtopic">
+          <h3>Git</h3>
+          <input type="range" min="0" max="100" value="0" class="slider" data-category="vc" data-subtopic="git">
+          <span class="level" data-category="vc" data-subtopic="git">0%</span>
+        </div>
+        
+
+        <div>
+          <button>Frameworks</button>
+          <div class="subtopic">
+            <h3>GitHub</h3>
+            <input type="range" min="0" max="100" value="0" class="slider" data-category="vc" data-subtopic="gh">
+            <span class="level" data-category="vc" data-subtopic="gh">0%</span>
+          </div>
+          <div class="subtopic">
+            <h3>GitLab</h3>
+            <input type="range" min="0" max="100" value="0" class="slider" data-category="vc" data-subtopic="gl">
+            <span class="level" data-category="vc" data-subtopic="gl">0%</span>
+          </div>
+
+          
+          <button class="activity">Followed Learning Activities...</button>
+          <div class="feedback-section">
+           
+            <textarea placeholder="add your activities here..." id="feedbackText"></textarea>
+            <button class="submit-btn" onclick="saveFeedback()" style="background-color: black;">Add Activity</button>
+          </div>
+      </div>
+    </section>
+
+    <section class="main-category">
+      <div class="category-header">
+        <h2>Data Bases</h2>
+        <div class="progress-bar">
+          <div class="progress" data-category="db"></div>
+        </div>
+        <span class="level" data-category="db">0%</span>
+      </div>
+
+      <div class="subtopics">
+        <div>
+          
+        </div>
+        <div class="subtopic">
+          <h3>MySQL</h3>
+          <input type="range" min="0" max="100" value="0" class="slider" data-category="db" data-subtopic="msql">
+          <span class="level" data-category="db" data-subtopic="msql">0%</span>
+        </div>
+        <div class="subtopic">
+          <h3>postgresSQL</h3>
+          <input type="range" min="0" max="100" value="0" class="slider" data-category="db" data-subtopic="psql">
+          <span class="level" data-category="db" data-subtopic="psql">0%</span>
+        </div>
+
+        <div>
+          
+          <div class="subtopic">
+            <h3>MongoDB</h3>
+            <input type="range" min="0" max="100" value="0" class="slider" data-category="db" data-subtopic="mgdb">
+            <span class="level" data-category="db" data-subtopic="mgdb">0%</span>
+          </div>
+          <div class="subtopic">
+            <h3>SQLite</h3>
+            <input type="range" min="0" max="100" value="0" class="slider" data-category="db" data-subtopic="litesql">
+            <span class="level" data-category="db" data-subtopic="litesql">0%</span>
+          </div>
+
+          <div class="subtopic">
+            <h3>Firebase</h3>
+            <input type="range" min="0" max="100" value="0" class="slider" data-category="db" data-subtopic="fb">
+            <span class="level" data-category="db" data-subtopic="fb">0%</span>
+          </div>
+
+          <div class="subtopic">
+            <h3>Realm</h3>
+            <input type="range" min="0" max="100" value="0" class="slider" data-category="db" data-subtopic="rm">
+            <span class="level" data-category="db" data-subtopic="rm">0%</span>
+          </div>
+
+          <div class="subtopic">
+            <h3>ML,ML Kit</h3>
+            <input type="range" min="0" max="100" value="0" class="slider" data-category="db" data-subtopic="ml">
+            <span class="level" data-category="db" data-subtopic="ml">0%</span>
+          </div>
+
+          <div class="subtopic">
+            <h3>AWS</h3>
+            <input type="range" min="0" max="100" value="0" class="slider" data-category="db" data-subtopic="aws">
+            <span class="level" data-category="db" data-subtopic="aws">0%</span>
+          </div>
+
+          <div class="subtopic">
+            <h3>cloud</h3>
+            <input type="range" min="0" max="100" value="0" class="slider" data-category="db" data-subtopic="cloud">
+            <span class="level" data-category="db" data-subtopic="cloud">0%</span>
+          </div>
+
+          <button class="activity">Followed Learning Activities...</button>
+      <div class="feedback-section">
+       
+        <textarea placeholder="add your activities here..." id="feedbackText"></textarea>
+        <button class="submit-btn" onclick="saveFeedback()" style="background-color: black;">Add Activity</button>
+      </div>
+        
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>🌟 Keep improving your skills and share your journey! 🌟</p>
+  </footer>
+
+  <script src="../JS_files/page1.js"></script>
+</body>
+</html>
+
+

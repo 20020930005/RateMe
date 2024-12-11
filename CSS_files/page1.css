@@ -1,0 +1,220 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #669bbc, #e0e0f8);
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #003049;
+  color: white;
+}
+
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.main-category {
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.main-category:hover {
+  transform: translateY(-5px);
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 60%;
+  height: 20px;
+  background: #e0e0e0;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  width: 0%;
+  background: #4caf50;
+  transition: width 0.3s;
+}
+
+.subtopics {
+  margin-top: 5px;
+  display: none;
+  transition: max-height 0.3s;
+}
+
+.main-category:hover .subtopics {
+  display: block;
+}
+
+.subtopic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+input[type="range"] {
+  width: 60%;
+}
+
+/* Universal Button Style */
+button {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #4caf50, #2196f3);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effects */
+button:hover {
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(33, 150, 243, 0.3), 0 4px 10px rgba(76, 175, 80, 0.3);
+}
+
+/* Glowing Effect */
+button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1), transparent);
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+  border-radius: 50px;
+}
+
+/* Active Button Press Effect */
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(33, 150, 243, 0.2), 0 2px 5px rgba(76, 175, 80, 0.2);
+}
+
+button:hover::before {
+  left: 50%;
+}
+
+/* General styles for textarea */
+textarea {
+  width: 100%;
+  max-width: 500px;
+  height: 150px;
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background: #f9f9f9;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  resize: none;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus state for textarea */
+textarea:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.4);
+  background: #fff;
+}
+
+/* Styles for the submit button */
+.submit-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #af4c68;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the submit button */
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Styles for the header text */
+.feedback-section h3 {
+  font-size: 20px;
+  color: #4caf50;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  /* For smaller screens like tablets */
+  .submit-btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 18px;
+  }
+
+  /* Adjust textarea padding and font size for mobile view */
+  textarea {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  /* Reduce the font size for header on small screens */
+  .feedback-section h3 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* For very small screens like mobile phones */
+  .submit-btn {
+    padding: 14px 0;
+    font-size: 16px;
+  }
+
+  /* Adjust textarea padding and font size further */
+  textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Further reduce the font size for header on mobile view */
+  .feedback-section h3 {
+    font-size: 16px;
+  }
+}
+
+.activity{
+  margin-bottom: 5px;
+}
+
+
